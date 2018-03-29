@@ -6,6 +6,10 @@
  * 範例教學
  * https://blog.reh.tw/webpage-display-minecraft-server-status/
  */
+define('MQ_SERVER_ADDR', $host);
+define('MQ_SERVER_PORT', $port);
+define('MQ_TIMEOUT', 1);
+
 require __DIR__.'/data/query.php';
 require __DIR__.'/data/ping.php';
 

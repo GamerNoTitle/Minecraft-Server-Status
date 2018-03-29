@@ -9,10 +9,6 @@
 use xPaw\MinecraftQuery;
 use xPaw\MinecraftQueryException;
 
-define('MQ_SERVER_ADDR', $host);
-define('MQ_SERVER_PORT', $port);
-define('MQ_TIMEOUT', 1);
-
 require dirname(dirname(__FILE__)).'/src/MinecraftQuery.php';
 require dirname(dirname(__FILE__)).'/src/MinecraftQueryException.php';
 
