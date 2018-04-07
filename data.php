@@ -14,28 +14,7 @@ require __DIR__.'/data/query.php';
 require __DIR__.'/data/ping.php';
 
 if (($Info = $Query->GetInfo()) !== false) { //判斷 Query 是否查詢的到
-    /* 清除伺服器 MOTD 顏色參數 */
-    $CleanHostName = str_replace("§k", "", $Info['HostName']);
-    $CleanHostName = str_replace("§l", "", $CleanHostName);
-    $CleanHostName = str_replace("§m", "", $CleanHostName);
-    $CleanHostName = str_replace("§n", "", $CleanHostName);
-    $CleanHostName = str_replace("§o", "", $CleanHostName);
-    $CleanHostName = str_replace("§r", "", $CleanHostName);
-    $CleanHostName = str_replace("§1", "", $CleanHostName);
-    $CleanHostName = str_replace("§2", "", $CleanHostName);
-    $CleanHostName = str_replace("§3", "", $CleanHostName);
-    $CleanHostName = str_replace("§4", "", $CleanHostName);
-    $CleanHostName = str_replace("§5", "", $CleanHostName);
-    $CleanHostName = str_replace("§6", "", $CleanHostName);
-    $CleanHostName = str_replace("§7", "", $CleanHostName);
-    $CleanHostName = str_replace("§8", "", $CleanHostName);
-    $CleanHostName = str_replace("§9", "", $CleanHostName);
-    $CleanHostName = str_replace("§a", "", $CleanHostName);
-    $CleanHostName = str_replace("§b", "", $CleanHostName);
-    $CleanHostName = str_replace("§c", "", $CleanHostName);
-    $CleanHostName = str_replace("§d", "", $CleanHostName);
-    $CleanHostName = str_replace("§e", "", $CleanHostName);
-    $CleanHostName = str_replace("§f", "", $CleanHostName);
+    $CleanHostName = str_replace(array("§k", "§l", "§m", "§n", "§o", "§r", "§1", "§2", "§3", "§4", "§5", "§6", "§7", "§8", "§9", "§a", "§b", "§c", "§d", "§e", "§f"), "", $Info['HostName']); //清除伺服器 MOTD 顏色參數
 
     $status = "在線"; //伺服器狀態
     $platform = $Info['GameName']; //伺服器平台 (MINECRAFT or MINECRAFTPE)
@@ -60,28 +39,7 @@ if (($Info = $Query->GetInfo()) !== false) { //判斷 Query 是否查詢的到
     $Players = $Query->GetPlayers(); //取得在線玩家列表
     $Plugins = $info['Plugins']; //取得插件列表
 } else if ($InfoPing !== false) { //判斷 Ping 是否查詢的到
-    /* 清除伺服器 MOTD 顏色參數 */
-    $CleanHostName = str_replace("§k", "", $InfoPing['description']);
-    $CleanHostName = str_replace("§l", "", $CleanHostName);
-    $CleanHostName = str_replace("§m", "", $CleanHostName);
-    $CleanHostName = str_replace("§n", "", $CleanHostName);
-    $CleanHostName = str_replace("§o", "", $CleanHostName);
-    $CleanHostName = str_replace("§r", "", $CleanHostName);
-    $CleanHostName = str_replace("§1", "", $CleanHostName);
-    $CleanHostName = str_replace("§2", "", $CleanHostName);
-    $CleanHostName = str_replace("§3", "", $CleanHostName);
-    $CleanHostName = str_replace("§4", "", $CleanHostName);
-    $CleanHostName = str_replace("§5", "", $CleanHostName);
-    $CleanHostName = str_replace("§6", "", $CleanHostName);
-    $CleanHostName = str_replace("§7", "", $CleanHostName);
-    $CleanHostName = str_replace("§8", "", $CleanHostName);
-    $CleanHostName = str_replace("§9", "", $CleanHostName);
-    $CleanHostName = str_replace("§a", "", $CleanHostName);
-    $CleanHostName = str_replace("§b", "", $CleanHostName);
-    $CleanHostName = str_replace("§c", "", $CleanHostName);
-    $CleanHostName = str_replace("§d", "", $CleanHostName);
-    $CleanHostName = str_replace("§e", "", $CleanHostName);
-    $CleanHostName = str_replace("§f", "", $CleanHostName);
+    $CleanHostName = str_replace(array("§k", "§l", "§m", "§n", "§o", "§r", "§1", "§2", "§3", "§4", "§5", "§6", "§7", "§8", "§9", "§a", "§b", "§c", "§d", "§e", "§f"), "", $InfoPing['description']); //清除伺服器 MOTD 顏色參數
 
     $status = "在線"; //伺服器狀態
     $platform = "使用 Ping 查詢無法取得資料"; //伺服器平台 (MINECRAFT or MINECRAFTPE)
