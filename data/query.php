@@ -9,8 +9,8 @@
 use xPaw\MinecraftQuery;
 use xPaw\MinecraftQueryException;
 
-require dirname(dirname(__FILE__)).'/src/MinecraftQuery.php';
-require dirname(dirname(__FILE__)).'/src/MinecraftQueryException.php';
+require_once dirname(dirname(__FILE__)).'/src/MinecraftQuery.php';
+require_once dirname(dirname(__FILE__)).'/src/MinecraftQueryException.php';
 
 $Timer = MicroTime(true);
 

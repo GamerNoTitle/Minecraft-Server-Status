@@ -9,8 +9,8 @@
 use xPaw\MinecraftPing;
 use xPaw\MinecraftPingException;
 
-require dirname(dirname(__FILE__)).'/src/MinecraftPing.php';
-require dirname(dirname(__FILE__)).'/src/MinecraftPingException.php';
+require_once dirname(dirname(__FILE__)).'/src/MinecraftPing.php';
+require_once dirname(dirname(__FILE__)).'/src/MinecraftPingException.php';
 
 $Timer = MicroTime(true);
 

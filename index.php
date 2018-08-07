@@ -13,7 +13,7 @@ $host = $_GET["host"];
 $port = $_GET["port"];
 */
 
-require __DIR__.'/data.php';
+require_once __DIR__.'/data.php';
 ?>
 <html>
     <head>
@@ -28,7 +28,8 @@ require __DIR__.'/data.php';
             <br>主機 IP：<font color="#2a6c0f"><?php echo $hostip; ?></font>
             <br>端口：<font color="#2a6c0f"><?php echo $port; ?></font></p>
         <p>MOTD：<font color="#2a6c0f"><?php echo $motd; ?></font>
-            <br>清除顏色參數後的 MOTD：<font color="#2a6c0f"><?php echo $clean_motd; ?></font></p>
+            <br>清除顏色參數後的 MOTD：<font color="#2a6c0f"><?php echo $clean_motd; ?></font>
+            <br>顏色參數轉為 HTML 的 MOTD：<font color="#2a6c0f"><?php echo $html_motd; ?></font></p>
         <p>平台：<font color="#2a6c0f"><?php echo $platform; ?></font>
             <br>遊戲類型：<font color="#2a6c0f"><?php echo $gametype; ?></font></p>
         <p>兼容遊戲版本：<font color="#2a6c0f"><?php echo $version; ?></font>
