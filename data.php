@@ -50,7 +50,7 @@ if (($Info = $Query->GetInfo()) !== false) { //判断 Query 是否查询的到
     $clean_motd = $cleanHostName; //清除颜色参数后的服务器 MOTD
     $html_motd = closeTags($hostNameHtml); //颜色参数转为 HTML 的服务器 MOTD
 
-    $host = $host; //服务器 IP 或网域
+    $host = $host; //服务器 IP 或域名
     $hostip = $Info['HostIp']; //服务器 IP
     $port = $Info['HostPort']; //服务器端口
 
@@ -100,7 +100,7 @@ if (($Info = $Query->GetInfo()) !== false) { //判断 Query 是否查询的到
     $clean_motd = $cleanHostName; //清除颜色参数后的服务器 MOTD
     $html_motd = closeTags($hostNameHtml); //颜色参数转为 HTML 的服务器 MOTD
 
-    $host = $host; //服务器 IP 或网域
+    $host = $host; //服务器 IP 或域名
     $hostip = "使用 Ping 查询无法取得数据"; //服务器主机 IP
     $port = $port; //服务器端口
 
@@ -115,8 +115,8 @@ if (($Info = $Query->GetInfo()) !== false) { //判断 Query 是否查询的到
     $agreement = "Ping"; //使用的查询协议 (这边是用来显示查询方式的)
     $processed = $Timer; //查询耗时
 } else { //否则为脱机
-    $status = "脱机"; //服务器状态
-    $host = $host; //服务器 IP 或网域
+    $status = "离线"; //服务器状态
+    $host = $host; //服务器 IP 或域名
     $port = $port; //服务器端口
 }
 ?>

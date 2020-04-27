@@ -3,21 +3,24 @@
  * 张文相 Zhang Wenxiang - 个人 Blog
  * https://blog.reh.tw/
  *
- * 范例教学
+ * 例子教学
  * https://blog.reh.tw/webpage-display-minecraft-server-status/
+ * 
+ * 由GamerNoTitle修改
  */
-$host = "mc.bili33.top"; //设定服务器网域或 IP
-$port = "28574"; //设定服务器端口
+$host = "mc.bili33.top"; //设置服务器域名或 IP
+$port = "28574"; //设置服务器端口
 /*
 $host = $_GET["host"];
 $port = $_GET["port"];
+以下html的内容请自己酌情更改，请不要删除版权信息
 */
 
 require_once __DIR__.'/data.php';
 ?>
 <html>
 	<head>
-		<title>DTS Duet Minecraft Server</title>
+		<title>DTS Duet Technology Server</title>
 		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -49,7 +52,7 @@ require_once __DIR__.'/data.php';
 										</header>
 										<hr>
 										<p>状态：<font color="#2a6c0f"><?php echo $status; ?></font></p>
-										<p>IP 或网域：<font color="#2a6c0f"><?php echo $host; ?></font>
+										<p>IP 或域名：<font color="#2a6c0f"><?php echo $host; ?></font>
 											<br>主机 IP：<font color="#2a6c0f"><?php echo $hostip; ?></font>
 											<br>端口：<font color="#2a6c0f"><?php echo $port; ?></font></p>
 										<p>MOTD：<font color="#2a6c0f"><?php echo $motd; ?></font>
@@ -61,8 +64,8 @@ require_once __DIR__.'/data.php';
 											<br>服务器使用的软件或核心：<font color="#2a6c0f"><?php echo $software; ?></font></p>
 										<p>可容纳最大玩家数：<font color="#2a6c0f"><?php echo $players_max; ?></font>
 											<br>在线玩家数：<font color="#2a6c0f"><?php echo $players_online; ?></font></p>
-										<p>使用的查询协议：<font color="#2a6c0f"><?php echo $agreement; ?></font>
-											<br>查询耗时：<font color="#2a6c0f"><?php echo $processed; ?></font></p>
+										<p>使用的查询方式：<font color="#2a6c0f"><?php echo $agreement; ?></font>
+											<br>查询用时：<font color="#2a6c0f"><?php echo $processed; ?></font></p>
 										<!-- <hr> -->
 										<h3>目前在线玩家 <font color="#2a6c0f"><?php echo $players_online; ?></font>/<font color="#2a6c0f"><?php echo $players_max; ?></font></h3>
 										<?php if (is_array($Players)) : ?>
