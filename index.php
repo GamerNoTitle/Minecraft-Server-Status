@@ -1,13 +1,13 @@
 <?php
 /*
- * 張文相 Zhang Wenxiang - 個人 Blog
+ * 张文相 Zhang Wenxiang - 个人 Blog
  * https://blog.reh.tw/
  *
- * 範例教學
+ * 范例教学
  * https://blog.reh.tw/webpage-display-minecraft-server-status/
  */
-$host = "meow.mcpe.tw"; //設定伺服器網域或 IP
-$port = "19132"; //設定伺服器端口
+$host = "mc.bili33.top"; //设定服务器网域或 IP
+$port = "28574"; //设定服务器端口
 /*
 $host = $_GET["host"];
 $port = $_GET["port"];
@@ -16,36 +16,79 @@ $port = $_GET["port"];
 require_once __DIR__.'/data.php';
 ?>
 <html>
-    <head>
-        <title>網頁顯示 Minecraft 伺服器狀態示範</title>
-    </head>
-    <body>
-        <h1>網頁顯示 Minecraft 伺服器狀態示範</h1>
-        <h2>教學文章：<a href="https://blog.reh.tw/webpage-display-minecraft-server-status/" target="_blank">https://blog.reh.tw/webpage-display-minecraft-server-status/</a></h2>
-        <hr>
-        <p>狀態：<font color="#2a6c0f"><?php echo $status; ?></font></p>
-        <p>IP 或網域：<font color="#2a6c0f"><?php echo $host; ?></font>
-            <br>主機 IP：<font color="#2a6c0f"><?php echo $hostip; ?></font>
-            <br>端口：<font color="#2a6c0f"><?php echo $port; ?></font></p>
-        <p>MOTD：<font color="#2a6c0f"><?php echo $motd; ?></font>
-            <br>清除顏色參數後的 MOTD：<font color="#2a6c0f"><?php echo $clean_motd; ?></font>
-            <br>顏色參數轉為 HTML 的 MOTD：<font color="#2a6c0f"><?php echo $html_motd; ?></font></p>
-        <p>平台：<font color="#2a6c0f"><?php echo $platform; ?></font>
-            <br>遊戲類型：<font color="#2a6c0f"><?php echo $gametype; ?></font></p>
-        <p>兼容遊戲版本：<font color="#2a6c0f"><?php echo $version; ?></font>
-            <br>伺服器使用的軟體或核心：<font color="#2a6c0f"><?php echo $software; ?></font></p>
-        <p>可容納最大玩家數：<font color="#2a6c0f"><?php echo $players_max; ?></font>
-            <br>線上玩家數：<font color="#2a6c0f"><?php echo $players_online; ?></font></p>
-        <p>使用的查詢協定：<font color="#2a6c0f"><?php echo $agreement; ?></font>
-            <br>查詢耗時：<font color="#2a6c0f"><?php echo $processed; ?></font></p>
-        <hr>
-        <h3>目前在線玩家 <font color="#2a6c0f"><?php echo $players_online; ?></font>/<font color="#2a6c0f"><?php echo $players_max; ?></font></h3>
-        <?php if (is_array($Players)) : ?>
-        <?php foreach($Players as $Player) : ?>
-        <font color="#2a6c0f"><?php echo htmlspecialchars($Player); ?></font><br>
-        <?php endforeach; ?>
-        <?php else: ?>
-        無玩家在線。
-        <?php endif; ?>
-    </body>
+	<head>
+		<title>DTS Duet Minecraft Server</title>
+		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>DTS Duet Technology Server</h1>
+						<p>Minecraft Techonology Server by <a href="https://bili33.top">GamerNoTitle</a> & UBIthepotato<br />
+						Server Status by <a href="https://bili33.top">GamerNoTitle</a> powered by <a href="https://leancloud.app">Leancloud International</a>.</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Minecraft服务器状态</h2>
+										</header>
+										<hr>
+										<p>状态：<font color="#2a6c0f"><?php echo $status; ?></font></p>
+										<p>IP 或网域：<font color="#2a6c0f"><?php echo $host; ?></font>
+											<br>主机 IP：<font color="#2a6c0f"><?php echo $hostip; ?></font>
+											<br>端口：<font color="#2a6c0f"><?php echo $port; ?></font></p>
+										<p>MOTD：<font color="#2a6c0f"><?php echo $motd; ?></font>
+											<br>清除颜色参数后的 MOTD：<font color="#2a6c0f"><?php echo $clean_motd; ?></font>
+											<br>颜色参数转为 HTML 的 MOTD：<font color="#2a6c0f"><?php echo $html_motd; ?></font></p>
+										<p>平台：<font color="#2a6c0f"><?php echo $platform; ?></font>
+											<br>游戏类型：<font color="#2a6c0f"><?php echo $gametype; ?></font></p>
+										<p>兼容游戏版本：<font color="#2a6c0f"><?php echo $version; ?></font>
+											<br>服务器使用的软件或核心：<font color="#2a6c0f"><?php echo $software; ?></font></p>
+										<p>可容纳最大玩家数：<font color="#2a6c0f"><?php echo $players_max; ?></font>
+											<br>在线玩家数：<font color="#2a6c0f"><?php echo $players_online; ?></font></p>
+										<p>使用的查询协议：<font color="#2a6c0f"><?php echo $agreement; ?></font>
+											<br>查询耗时：<font color="#2a6c0f"><?php echo $processed; ?></font></p>
+										<!-- <hr> -->
+										<h3>目前在线玩家 <font color="#2a6c0f"><?php echo $players_online; ?></font>/<font color="#2a6c0f"><?php echo $players_max; ?></font></h3>
+										<?php if (is_array($Players)) : ?>
+										<?php foreach($Players as $Player) : ?>
+										<font color="#2a6c0f"><?php echo htmlspecialchars($Player); ?></font><br>
+										<?php endforeach; ?>
+										<?php else: ?>
+										无玩家在线。
+										<?php endif; ?>
+										<hr>
+										<ul class="actions">
+											<li><a href="https://bili33.top" class="button">About GamerNoTitle</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png" alt="" /></span>
+								</div>
+							</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
 </html>
