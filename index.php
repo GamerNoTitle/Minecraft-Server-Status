@@ -50,7 +50,8 @@ require_once __DIR__.'/data.php';
 									<div class="content">
 										<header class="major">
 											<h2>Minecraft服务器状态</h2>
-											<h3>服务器地址：mc.bili33.top:28574</h3>
+											<h3>服务器地址：<font color="#2a6c0f">mc.bili33.top:28574</font></h3>
+											<h3><font color='#fb7299'>服务器已开启白名单！</font>
 										</header>
 										<hr>
 										<p>状态：<font color="#2a6c0f"><?php echo $status; ?></font></p>
