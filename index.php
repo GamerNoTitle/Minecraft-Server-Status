@@ -37,7 +37,7 @@ require_once __DIR__.'/data.php';
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
 						<h1>DTS Duet Technology Server</h1>
 						<p>Minecraft Techonology Server by <a href="https://bili33.top">GamerNoTitle</a> & UBIthepotato<br />
-						Server Status by <a href="https://bili33.top">GamerNoTitle</a> powered by <a href="https://leancloud.app">Leancloud International</a>.</p>
+						Server Status by <a href="https://bili33.top">GamerNoTitle</a> | Tamplate by <a href="https://html5up.net">HTML5UP</a>.</p>
 					</header>
 
 				<!-- Main -->
@@ -49,6 +49,7 @@ require_once __DIR__.'/data.php';
 									<div class="content">
 										<header class="major">
 											<h2>Minecraft服务器状态</h2>
+											<h6>服务器地址：mc.bili33.top:25874</h6>
 										</header>
 										<hr>
 										<p>状态：<font color="#2a6c0f"><?php echo $status; ?></font></p>
