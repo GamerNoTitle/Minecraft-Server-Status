@@ -5,5 +5,5 @@
 
 本开源项目遵循[MPL-2.0](https://github.com/GamerNoTitle/Minecraft-Server-Status/blob/master/LICENSE)协议，请遵守该协议！
 
-Demo: http://mcstats.bili33.top/
+Demo: http://mcstats.bili33.top:8880
 
