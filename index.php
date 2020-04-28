@@ -1,13 +1,5 @@
 <?php
-/*
- * 张文相 Zhang Wenxiang - 个人 Blog
- * https://blog.reh.tw/
- *
- * 例子教学
- * https://blog.reh.tw/webpage-display-minecraft-server-status/
- * 
- * 由GamerNoTitle修改
- */
+// 原作者为MCNewsTools，由GamerNoTitle二次修改，模板套用的HTML5UP的HTML模板，请在使用该程序的时候不要删除版权信息，Thanks♪(･ω･)ﾉ！
 $host = "mc.bili33.top"; //设置服务器域名或 IP
 $port = "43978"; //设置服务器端口，可以直接用服务器的链接端口，也可以使用query端口（UDP协议）
 /*
