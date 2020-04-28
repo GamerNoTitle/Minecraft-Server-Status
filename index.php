@@ -9,7 +9,7 @@
  * 由GamerNoTitle修改
  */
 $host = "mc.bili33.top"; //设置服务器域名或 IP
-$port = "28574"; //设置服务器端口
+$port = "43978"; //设置服务器端口，可以直接用服务器的链接端口，也可以使用query端口（UDP协议）
 /*
 $host = $_GET["host"];
 $port = $_GET["port"];
