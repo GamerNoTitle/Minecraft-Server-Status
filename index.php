@@ -50,7 +50,7 @@ require_once __DIR__.'/data.php';
 									<div class="content">
 										<header class="major">
 											<h2>Minecraft服务器状态</h2>
-											<h6>服务器地址：mc.bili33.top:25874</h6>
+											<h3>服务器地址：mc.bili33.top:28574</h3>
 										</header>
 										<hr>
 										<p>状态：<font color="#2a6c0f"><?php echo $status; ?></font></p>
