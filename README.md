@@ -11,5 +11,5 @@ Demo: http://mcstats.bili33.top:8880
 
 预览图
 
-![](https://cdn.jsdelivr.net/gh/GamerNoTitle/Minecraft-Server-Status@master/preview.)
+![](https://cdn.jsdelivr.net/gh/GamerNoTitle/Minecraft-Server-Status@master/preview.png)
 
