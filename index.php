@@ -43,7 +43,7 @@ require_once __DIR__.'/data.php';
 										<header class="major">
 											<h2>Minecraft服务器状态</h2>
 											<h3>服务器地址：<font color="#2a6c0f">mc.bili33.top:28574</font></h3>
-											<h3><font color='#fb7299'>服务器已开启白名单！</font>
+											<h4><font color='#fb7299'>服务器已开启白名单！</font></h4>
 										</header>
 										<hr>
 										<p>状态：<font color="#2a6c0f"><?php echo $status; ?></font></p>
@@ -65,12 +65,15 @@ require_once __DIR__.'/data.php';
 										<h3>目前在线玩家 <font color="#2a6c0f"><?php echo $players_online; ?></font>/<font color="#2a6c0f"><?php echo $players_max; ?></font></h3>
 										<?php if (is_array($Players)) : ?>
 										<?php foreach($Players as $Player) : ?>
-										<font color="#2a6c0f"><?php echo htmlspecialchars($Player); ?></font><br>
+											<?php if ($platform == "MINECRAFT") : ?>
+												<?php echo '<img src="https://cravatar.eu/helmhead/'.htmlspecialchars($Player).'/15.png"> '.htmlspecialchars($Player); ?><br>
+											<?php else: ?>
+												<?php echo '<img src="https://cravatar.eu/helmhead/steve/15.png"> '.htmlspecialchars($Player); ?><br>
+											<?php endif; ?>
 										<?php endforeach; ?>
 										<?php else: ?>
-										无玩家在线。
-										<?php endif; ?>
-										<hr>
+											无玩家在线。
+										<?php endif; ?>										<hr>
 										<ul class="actions">
 											<li><a href="https://bili33.top" class="button">About GamerNoTitle</a></li>
 										</ul>
