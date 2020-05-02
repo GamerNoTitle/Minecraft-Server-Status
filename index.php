@@ -76,6 +76,8 @@ require_once __DIR__.'/data.php';
 										<?php endif; ?>										<hr>
 										<ul class="actions">
 											<li><a href="https://bili33.top" class="button">About GamerNoTitle</a></li>
+											<li><a href="https://github.com/GamerNoTitle/Minecraft-Server-Status" class="button">View on Github</a></li>
+											<li><a href="https://html5up.net" class="button">HTML5UP</a></li>
 										</ul>
 									</div>
 									<span class="image"><img src="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png" alt="" /></span>
