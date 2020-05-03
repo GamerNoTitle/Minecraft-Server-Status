@@ -12,7 +12,7 @@ require_once __DIR__.'/data.php';
 ?>
 <html>
 	<head>
-		<title>DTS Duet Technology Server</title>
+		<title>MTS Multiple Technology Server</title>
 		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -27,7 +27,7 @@ require_once __DIR__.'/data.php';
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>DTS Duet Technology Server</h1>
+						<h1>MTS Multiple Technology Server</h1>
 						<p>Minecraft Techonology Server by <a href="https://bili33.top">GamerNoTitle</a> & UBIthepotato<br />
 						Server Status by <a href="https://bili33.top">GamerNoTitle</a> | Tamplate by <a href="https://html5up.net">HTML5UP</a><br />
 						Open Source Project <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Minecraft-Server-Status</a> is now avaliable on <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Github</a></p>
