@@ -13,3 +13,8 @@ Demo: http://mcstats.bili33.top:8880
 
 ![](https://cdn.jsdelivr.net/gh/GamerNoTitle/Minecraft-Server-Status@master/preview.png)
 
+---
+
+Credit:
+
+[@MCNewsTools/webpage-minecraft-server-status](https://github.com/MCNewsTools/webpage-minecraft-server-status)
