@@ -1,7 +1,7 @@
 <?php
 // 原作者为MCNewsTools，由GamerNoTitle二次修改，模板套用的HTML5UP的HTML模板，请在使用该程序的时候不要删除版权信息，Thanks♪(･ω･)ﾉ！
 $host = "mc.bili33.top"; //设置服务器域名或 IP
-$port = "43978"; //设置服务器端口，可以直接用服务器的链接端口，也可以使用query端口（UDP协议）
+$port = "28564"; //设置服务器端口，可以直接用服务器的链接端口，也可以使用query端口（UDP协议）
 /*
 $host = $_GET["host"];
 $port = $_GET["port"];
@@ -12,7 +12,7 @@ require_once __DIR__.'/data.php';
 ?>
 <html>
 	<head>
-		<title>MTS Multiple Technology Server</title>
+		<title>EMUnion</title>
 		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -27,8 +27,8 @@ require_once __DIR__.'/data.php';
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>MTS Multiple Technology Server</h1>
-						<p>Minecraft Techonology Server by <a href="https://bili33.top">GamerNoTitle</a> & UBIthepotato<br />
+						<h1>EMUnion</h1>
+						<p>EMUnion Hosted by <a href="https://bili33.top">GamerNoTitle</a><br />
 						Server Status by <a href="https://bili33.top">GamerNoTitle</a> | Tamplate by <a href="https://html5up.net">HTML5UP</a><br />
 						Open Source Project <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Minecraft-Server-Status</a> is now avaliable on <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Github</a></p>
 					</header>
@@ -42,8 +42,6 @@ require_once __DIR__.'/data.php';
 									<div class="content">
 										<header class="major">
 											<h2>Minecraft服务器状态</h2>
-											<h3>服务器地址：<font color="#2a6c0f">mc.bili33.top:28574</font></h3>
-											<h4><font color='#fb7299'>服务器已开启白名单！</font></h4>
 										</header>
 										<hr>
 										<p>状态：<font color="#2a6c0f"><?php echo $status; ?></font></p>
