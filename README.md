@@ -13,7 +13,43 @@ Demo: http://mcstats.bili33.top
 
 #### 基础使用
 
-只需要修改index.php中第3行的`$host`后面的内容为你的域名/IP和修改第4行的`$port`后面为你的端口号
+##### 与服务器对接
+
+只需要修改index.php中第3行的`$host`后面的内容为你的域名/IP和修改第4行的`$port`后面为你的端口号（可以是游戏用的端口也可以是query端口，但是query要自己手动开启而且是UDP协议）
+
+##### 修改网站标题（就是浏览器标签页显示的内容）
+
+在第15行
+
+```html
+<title>EMUnion</title>
+```
+
+在两个title的标记中间输入你的网页名字即可！
+
+##### 修改网站第一行大字
+
+在第30行
+
+```html
+<h1>EMUnion</h1>
+```
+
+在两个h1中间输入你想要的字即可！
+
+##### 修改大字下面的三行小字
+
+在第31~33行
+
+```html
+<p>EMUnion Hosted by <a href="https://bili33.top">GamerNoTitle</a><br />
+Server Status by <a href="https://bili33.top">GamerNoTitle</a> | Tamplate by <a href="https://html5up.net">HTML5UP</a><br />
+Open Source Project <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Minecraft-Server-Status</a> is now avaliable on <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Github</a></p>
+```
+
+在两个p标记中间输入你想要的字就可以了，遵循HTML语法，使用`<br>`换行（至于为啥我是`<br />`，因为换行这玩意真的没有特定的写法）
+
+HTML语法更多请去菜鸟教程参考！
 
 #### 更多修改
 
