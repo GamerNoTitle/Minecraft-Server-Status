@@ -27,6 +27,16 @@ Demo: http://mcstats.bili33.top
 
 在两个title的标记中间输入你的网页名字即可！
 
+##### 修改网站图标
+
+在第16行
+
+```html
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png">
+```
+
+在href后面把链接改为自己的图像链接即可！
+
 ##### 修改网站第一行大字
 
 在第30行
