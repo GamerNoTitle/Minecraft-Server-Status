@@ -19,7 +19,7 @@ Demo: http://mcstats.bili33.top
 
 ##### 更多修改
 
-只需要将`index.php`文件开头几行的变量修改一下就行了
+只需要将`index.php`文件开头几行的变量修改一下就行了（PS：头像的反代请去把`https://cravatar.eu`自行替换成自己的反代链接）
 
 ```php
 $host = "mc.example.com"; //设置服务器域名或 IP
@@ -29,6 +29,8 @@ $iconlink = 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/l
 $description = 'Server Status by <a href="https://bili33.top">GamerNoTitle</a> | Tamplate by <a href="https://html5up.net">HTML5UP</a><br>Open Source Project <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Minecraft-Server-Status</a> is now avaliable on <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Github</a>'; // 描述，会显示在大标题的下方，用html语法写就可以了，换行请用<br>
 $imagelink = 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png'; // 图片链接，会显示在服务器信息右边的圈圈里
 ```
+
+
 
 #### 进阶修改
 
