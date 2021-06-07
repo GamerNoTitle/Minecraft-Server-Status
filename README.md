@@ -17,96 +17,17 @@ Demo: http://mcstats.bili33.top
 
 只需要修改index.php中第3行的`$host`后面的内容为你的域名/IP和修改第4行的`$port`后面为你的端口号（可以是游戏用的端口也可以是query端口，但是query要自己手动开启而且是UDP协议）
 
-##### 修改网站标题（就是浏览器标签页显示的内容）
+##### 更多修改
 
-在第15行
+只需要将`index.php`文件开头几行的变量修改一下就行了
 
-```html
-<title>EMUnion</title>
-```
-
-在两个title的标记中间输入你的网页名字即可！
-
-##### 修改网站图标
-
-在第16行
-
-```html
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png">
-```
-
-在href后面把链接改为自己的图像链接即可！
-
-##### 修改网站第一行大字
-
-在第30行
-
-```html
-<h1>EMUnion</h1>
-```
-
-在两个h1中间输入你想要的字即可！
-
-##### 修改大字下面的三行小字
-
-在第31~33行
-
-```html
-<p>EMUnion Hosted by <a href="https://bili33.top">GamerNoTitle</a><br />
-Server Status by <a href="https://bili33.top">GamerNoTitle</a> | Tamplate by <a href="https://html5up.net">HTML5UP</a><br />
-Open Source Project <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Minecraft-Server-Status</a> is now avaliable on <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Github</a></p>
-```
-
-在两个p标记中间输入你想要的字就可以了，遵循HTML语法，使用`<br>`换行（至于为啥我是`<br />`，因为换行这玩意真的没有特定的写法）
-
-HTML语法更多请去菜鸟教程参考！
-
-#### 更多修改
-
-##### 头像调用链接
-
-在第67行
-
-```php+HTML
-<?php echo '<img src="https://cravatar.eu/helmhead/'.htmlspecialchars($Player).'/15.png"> '.htmlspecialchars($Player); ?><br>
-```
-
-和第69行
-
-```php+HTML
-<?php echo '<img src="https://cravatar.eu/helmhead/steve/15.png"> '.htmlspecialchars($Player); ?><br>
-```
-
-中把`cravatar.eu`改成你自己的反代域名或者其他域名就可以了
-
-##### 底端按钮
-
-在第76~78行
-
-```php+HTML
-<li><a href="https://bili33.top" class="button">About GamerNoTitle</a></li>
-<li><a href="https://github.com/GamerNoTitle/Minecraft-Server-Status" class="button">View on Github</a></li>
-<li><a href="https://html5up.net" class="button">HTML5UP</a></li>
-```
-
-格式是
-
-```html
-<li><a href="在这里填入你的链接" class="button">在这里填入显示的文字</a></li>
-```
-
-##### 右侧图片
-
-在第81行
-
-```html
-<span class="image"><img src="https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png" alt="" /></span>
-```
-
-直接把`src=`后面的链接改成你的图片链接即可！
-
-```html
-<span class="image"><img src="在这里填入你的链接" alt="" /></span>
+```php
+$host = "mc.example.com"; //设置服务器域名或 IP
+$port = "25565"; //设置服务器端口，可以直接用服务器的链接端口，也可以使用query端口（UDP协议）
+$name = 'ExampleName'; // 服务器名字，会显示在标签页的标题和网站打头的大标题处
+$iconlink = 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png'; // 网站图标链接，可以使图片格式（.png/.jpg/etc.）或者是ico图标，用绝对路径或相对路径均可
+$description = 'Server Status by <a href="https://bili33.top">GamerNoTitle</a> | Tamplate by <a href="https://html5up.net">HTML5UP</a><br>Open Source Project <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Minecraft-Server-Status</a> is now avaliable on <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Github</a>'; // 描述，会显示在大标题的下方，用html语法写就可以了，换行请用<br>
+$imagelink = 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png'; // 图片链接，会显示在服务器信息右边的圈圈里
 ```
 
 #### 进阶修改
