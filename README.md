@@ -1,4 +1,7 @@
 # Minecraft-Server-Status
+
+![Minecraft-Server-Status](https://socialify.git.ci/GamerNoTitle/Minecraft-Server-Status/image?description=1&language=1&name=1&owner=1&stargazers=1&theme=Light)
+
 在网页中看到你的MC服务器状态！由[@MCNewsTools](https://github.com/MCNewsTools/webpage-minecraft-server-status)的项目修改而来！
 
 使用了[HTML5](https://html5up.net/)的模板，做了一些美化，如果你也想用本项目，记得在改PHP内嵌的HTML代码的时候把有关的内容改掉
