@@ -66,9 +66,9 @@ require_once __DIR__.'/data.php';
 										<?php if (is_array($Players)) : ?>
 										<?php foreach($Players as $Player) : ?>
 											<?php if ($platform == "MINECRAFT") : ?>
-												<?php echo '<img src="https://cravatar.eu/helmhead/'.htmlspecialchars($Player).'/15.png"> '.htmlspecialchars($Player); ?><br>
+												<?php echo '<img src="https://minotar.net/cube/'.htmlspecialchars($Player).'/100.png"> '.htmlspecialchars($Player); ?><br>
 											<?php else: ?>
-												<?php echo '<img src="https://cravatar.eu/helmhead/steve/15.png"> '.htmlspecialchars($Player); ?><br>
+												<?php echo '<img src="https://minotar.net/cube/steve/100.png"> '.htmlspecialchars($Player); ?><br>
 											<?php endif; ?>
 										<?php endforeach; ?>
 										<?php else: ?>
