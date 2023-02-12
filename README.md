@@ -32,6 +32,7 @@ $name = 'ExampleName'; // 服务器名字，会显示在标签页的标题和网
 $iconlink = 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png'; // 网站图标链接，可以使图片格式（.png/.jpg/etc.）或者是ico图标，用绝对路径或相对路径均可
 $description = 'Server Status by <a href="https://bili33.top">GamerNoTitle</a> | Tamplate by <a href="https://html5up.net">HTML5UP</a><br>Open Source Project <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Minecraft-Server-Status</a> is now avaliable on <a href="https://github.com/GamerNoTitle/Minecraft-Server-Status">Github</a>'; // 描述，会显示在大标题的下方，用html语法写就可以了，换行请用<br>
 $imagelink = 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png'; // 图片链接，会显示在服务器信息右边的圈圈里
+$display_connect_info = false; // 是否显示服务器连接信息
 ```
 
 
