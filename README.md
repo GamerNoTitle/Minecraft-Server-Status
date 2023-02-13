@@ -2,7 +2,14 @@
 
 ![Minecraft-Server-Status](https://socialify.git.ci/GamerNoTitle/Minecraft-Server-Status/image?description=1&language=1&name=1&owner=1&stargazers=1&theme=Light)
 
-在网页中看到你的MC服务器状态！由[@MCNewsTools](https://github.com/MCNewsTools/webpage-minecraft-server-status)的项目修改而来！
+在网页中看到你的MC服务器状态！~~由[@MCNewsTools](https://github.com/MCNewsTools/webpage-minecraft-server-status)的项目修改而来！~~ 换了个API，原来的版本在master分支，现在的版本显示的内容少一点，但是支持高版本服务器
+
+|  分支  |        版本支持        | 测试版本 | 状态 | IP:端口 |     MOTD（原生）     | MOTD（清除样式） | 版本 | 核心 | 最大玩家数 | 在线玩家数 | 在线玩家显示 |
+| :----: | :--------------------: | :------: | :--: | :-----: | :------------------: | :--------------: | :--: | :--: | :--------: | :--------: | :----------: |
+|  dev   |          任意          |  1.18.2  |  √   |    √    | ○（colorMOTD不支持） |        ×         |  √   |  √   |     ×      |     √      |      ×       |
+| master | 能保证的为1.14.4及以下 |  1.14.4  |  √   |    √    |          √           |        √         |  √   |  √   |     √      |     √      |      √       |
+
+
 
 使用了[HTML5](https://html5up.net/)的模板，做了一些美化，如果你也想用本项目，记得在改PHP内嵌的HTML代码的时候把有关的内容改掉
 
