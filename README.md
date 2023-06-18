@@ -1,6 +1,6 @@
 # Minecraft-Server-Status
 
-![Minecraft-Server-Status](https://socialify.git.ci/GamerNoTitle/Minecraft-Server-Status/image?description=1&language=1&name=1&owner=1&stargazers=1&theme=Light)
+**此处为旧项目，新版请前往https://github.com/GamerNoTitle/CraftMon**
 
 在网页中看到你的MC服务器状态！~~由[@MCNewsTools](https://github.com/MCNewsTools/webpage-minecraft-server-status)的项目修改而来！~~ 换了个API，原来的版本在master分支，现在的版本显示的内容少一点，但是支持高版本服务器
 
