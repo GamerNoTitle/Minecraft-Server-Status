@@ -20,6 +20,9 @@
 
 Demo: http://mcstats.bili33.top
 
+> 使用高版本PHP的时候，有可能会报Fatal error: Call to undefined function MinecraftServerStatus\socket_create() in vendor/funnyitselmo/minecraftserverstatus/src/MinecraftServerStatus.php on line 26
+> 可以通过这个issue的回复解决 https://github.com/GamerNoTitle/Minecraft-Server-Status/issues/2#issuecomment-1595950328
+
 ### 使用方法
 
 #### 基础使用
